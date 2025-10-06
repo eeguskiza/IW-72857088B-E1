@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<!-- Cabecera + navegación principal (común a todas las páginas) -->
+
 <header id="top">
   <div class="container">
     <h1><a href="index.html" style="color:#fff;text-decoration:none">F1 Lite Hub</a></h1>
@@ -23,50 +23,105 @@
   </div>
 </header>
 
-<!-- Banner/hero visual de la portada -->
+<!-- Banner/hero -->
 <section class="hero" aria-label="Pilotos 2025">
-  <!-- Nota: imagen local; se recorta con CSS (object-fit) -->
   <img src="assets/img/pilotos/leclerc-car.webp" alt="Leclerc 2025 en Ferrari">
 </section>
 
-<main class="container">
-  <!-- ÍNDICE INTERNO de esta página: enlaces de ancla a secciones -->
+<main id="contenido" class="container">
+  <!-- Índice interno -->
   <nav class="index-interno" aria-label="Contenido de esta página">
     <ul>
       <li><a href="#bienvenida">Bienvenida</a></li>
-      <li><a href="#lider">Líder actual</a></li>
+      <li><a href="#destacados">Destacados</a></li>
+      <li><a href="#top5">Top 5 Mundial</a></li>
       <li><a href="#proxima">Próxima carrera</a></li>
-      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#noticias">Noticias</a></li>
     </ul>
   </nav>
 
-  <!-- Sección: introducción breve -->
+  <!-- 1) Intro -->
   <section id="bienvenida">
     <h2>Bienvenido a F1 Lite Hub</h2>
     <p>Sitio ligero para seguir la temporada: calendario por páginas, pilotos confirmados y un formulario de alta. Navegación simple y clara.</p>
   </section>
 
-  <!-- Sección: estado del campeonato -->
-  <section id="lider">
-    <h2>Líder del Mundial 2025</h2>
-    <p><strong>Oscar Piastri (McLaren) — 336 puntos</strong>. Ventaja sólida tras Singapur.</p>
+  <!-- 2) Destacados -->
+  <section id="destacados">
+    <h2>Destacados</h2>
+    <article>
+      <p><strong>Líder del Mundial:</strong> Oscar Piastri (McLaren) — 336 pts.</p>
+      <p><strong>Último podio:</strong> Singapur — Russell, Verstappen, Norris.</p>
+    </article>
   </section>
 
-  <!-- Sección: próxima cita -->
+  <!-- 3) Top 5 -->
+  <section id="top5">
+    <h2>Top 5 Mundial 2025</h2>
+    <div class="table-wrapper">
+      <table aria-describedby="nota-top5">
+        <caption>Clasificación de pilotos · Top 5</caption>
+        <thead>
+          <tr>
+            <th scope="col">Pos</th>
+            <th scope="col">Piloto</th>
+            <th scope="col">Equipo</th>
+            <th scope="col">Puntos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Oscar Piastri</td><td>McLaren</td><td>336</td></tr>
+          <tr><td>2</td><td>Lando Norris</td><td>McLaren</td><td>314</td></tr>
+          <tr><td>3</td><td>Max Verstappen</td><td>Red Bull</td><td>273</td></tr>
+          <tr><td>4</td><td>George Russell</td><td>Mercedes</td><td>237</td></tr>
+          <tr><td>5</td><td>Charles Leclerc</td><td>Ferrari</td><td>173</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p id="nota-top5">Resumen de la clasificación. Consulta el detalle en Pilotos.</p>
+  </section>
+
+  <!-- 4) Próxima carrera -->
   <section id="proxima">
     <h2>Próxima carrera</h2>
     <p><strong>Gran Premio de Estados Unidos (Austin)</strong> · 17–19/10/2025 · Circuit of The Americas (COTA).</p>
+    <aside>
+      <p><strong>Formato del fin de semana:</strong> Viernes: Libres 1-2 · Sáb: Libres 3 y clasificación · Dom: Carrera.</p>
+    </aside>
     <p><a class="btn" href="carreras.html">Ver calendario completo</a></p>
   </section>
 
-  <!-- Sección: autoría y contacto -->
-  <section id="contacto">
-    <h2>Contacto y autoría</h2>
-    <p>Autor: <strong>Erik Eguskiza</strong> · <a href="mailto:e.eguskiza@opendeusto.es">e.eguskiza@opendeusto.es</a></p>
+  <!-- 5) Noticias -->
+  <section id="noticias" aria-labelledby="tit-noticias">
+    <h2 id="tit-noticias">Noticias</h2>
+    <article>
+      <h3>McLaren, campeones del mundo de Constructores 2025</h3>
+      <p>Singapur · 05/10/2025. Con el 3.º de Norris y el 4.º de Piastri, McLaren asegura el título por segundo año seguido.</p>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Clasificación de Constructores 2025</caption>
+          <thead>
+            <tr>
+              <th scope="col">Pos</th>
+              <th scope="col">Equipo</th>
+              <th scope="col">Puntos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>McLaren</td><td>650</td></tr>
+            <tr><td>2</td><td>Mercedes</td><td>325</td></tr>
+            <tr><td>3</td><td>Ferrari</td><td>298</td></tr>
+            <tr><td>4</td><td>Red Bull</td><td>290</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Plantilla: Lando Norris y Oscar Piastri. Es la 10.ª corona de la escudería.</p>
+    </article>
   </section>
 </main>
 
-<!-- Pie de página común -->
 <footer>
   <div class="container">
     <p>&copy; 2025 F1 Lite Hub · Erik Eguskiza.</p>

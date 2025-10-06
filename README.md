@@ -25,3 +25,6 @@ f1-lite-hub/
 - **Carreras (`carreras.html`)**: calendario 2025 por regiones en tablas.
 - **Pilotos (`pilotos.html`)**: galería de pilotos y sección “Cómo se llega a F1”.
 - **Alta (`alta.html`)**: formulario simple sin backend.
+
+## Enlaces
+Los dos enlaces a el repositorio y a Netlify estan en **`/docs/url.txt`**
