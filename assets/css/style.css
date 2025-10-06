@@ -25,8 +25,8 @@ h1, h2, h3 { line-height: 1.2; }
 /* 3) Cabecera y navegación */
 header, footer { background: #111; color: #fff; }
 nav ul { list-style: none; padding: 0; display: flex; gap: 1rem; flex-wrap: wrap; }
-nav a { color: #fff; text-decoration: none; }
-nav a:hover { text-decoration: underline; }           /* pseudoclase */
+header nav a { color:#fff; text-decoration:none; }
+header nav a:hover { text-decoration:underline; }
 
 /* 4) Contenido principal */
 main { padding: 1rem; }

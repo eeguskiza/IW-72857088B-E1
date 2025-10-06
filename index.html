@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<!-- Cabecera + navegación principal (común a todas las páginas) -->
 <header id="top">
   <div class="container">
     <h1><a href="index.html" style="color:#fff;text-decoration:none">F1 Lite Hub</a></h1>
@@ -22,35 +23,50 @@
   </div>
 </header>
 
-<!-- Hero limpio con collage -->
+<!-- Banner/hero visual de la portada -->
 <section class="hero" aria-label="Pilotos 2025">
-  <img src="assets/img/pilotos/leclerc-car.webp"
-       alt="Leclerc Coche 2025">
+  <!-- Nota: imagen local; se recorta con CSS (object-fit) -->
+  <img src="assets/img/pilotos/leclerc-car.webp" alt="Leclerc 2025 en Ferrari">
 </section>
 
 <main class="container">
+  <!-- ÍNDICE INTERNO de esta página: enlaces de ancla a secciones -->
+  <nav class="index-interno" aria-label="Contenido de esta página">
+    <ul>
+      <li><a href="#bienvenida">Bienvenida</a></li>
+      <li><a href="#lider">Líder actual</a></li>
+      <li><a href="#proxima">Próxima carrera</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sección: introducción breve -->
   <section id="bienvenida">
     <h2>Bienvenido a F1 Lite Hub</h2>
     <p>Sitio ligero para seguir la temporada: calendario por páginas, pilotos confirmados y un formulario de alta. Navegación simple y clara.</p>
   </section>
 
+  <!-- Sección: estado del campeonato -->
   <section id="lider">
     <h2>Líder del Mundial 2025</h2>
     <p><strong>Oscar Piastri (McLaren) — 336 puntos</strong>. Ventaja sólida tras Singapur.</p>
   </section>
 
+  <!-- Sección: próxima cita -->
   <section id="proxima">
     <h2>Próxima carrera</h2>
     <p><strong>Gran Premio de Estados Unidos (Austin)</strong> · 17–19/10/2025 · Circuit of The Americas (COTA).</p>
     <p><a class="btn" href="carreras.html">Ver calendario completo</a></p>
   </section>
 
+  <!-- Sección: autoría y contacto -->
   <section id="contacto">
     <h2>Contacto y autoría</h2>
     <p>Autor: <strong>Erik Eguskiza</strong> · <a href="mailto:e.eguskiza@opendeusto.es">e.eguskiza@opendeusto.es</a></p>
   </section>
 </main>
 
+<!-- Pie de página común -->
 <footer>
   <div class="container">
     <p>&copy; 2025 F1 Lite Hub · Erik Eguskiza.</p>
