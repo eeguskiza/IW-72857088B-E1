@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>F1 Lite Hub · Alta</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header id="top">
+  <div class="container">
+    <h1><a href="index.html" style="color:#fff;text-decoration:none">F1 Lite Hub</a></h1>
+    <nav aria-label="principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="carreras.html">Carreras</a></li>
+        <li><a href="pilotos.html">Pilotos</a></li>
+        <li><a href="alta.html">Alta</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section id="formulario">
+    <h2>Alta a newsletter + sorteo</h2>
+    <!-- Formulario simple, sin backend -->
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Datos personales</legend>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="nacimiento">Fecha de nacimiento</label>
+        <input id="nacimiento" name="nacimiento" type="date">
+
+        <label for="vistas">Nº de carreras vistas</label>
+        <input id="vistas" name="vistas" type="number" min="0" step="1">
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferencias</legend>
+        <label for="equipo">Equipo favorito</label>
+        <select id="equipo" name="equipo">
+          <option value="ferrari">Ferrari</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="redbull">Red Bull</option>
+          <option value="mclaren">McLaren</option>
+          <option value="alpine">Alpine</option>
+        </select>
+
+        <p>Tipo de fan</p>
+        <label><input type="radio" name="fan" value="casual" checked> Casual</label>
+        <label><input type="radio" name="fan" value="hardcore"> Hardcore</label>
+
+        <label for="comentarios">Comentarios</label>
+        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+        <label><input type="checkbox" name="acepto" required> Acepto las bases del sorteo</label>
+      </fieldset>
+
+      <div>
+        <button type="submit" class="btn">Enviar</button>
+        <button type="reset" class="btn">Reset</button>
+      </div>
+    </form>
+  </section>
+
+  <section id="bases">
+    <h2>Bases</h2>
+    <p>Proyecto académico. No se almacenan datos. Botón “Enviar” no guarda información.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p><a class="btn" href="#top">Volver arriba</a></p>
+  </div>
+</footer>
+</body>
+</html>

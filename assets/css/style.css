@@ -1,0 +1,87 @@
+/* F1 Lite Hub — CSS básico y válido W3C
+   Estructura:
+   1) Base
+   2) Layout y tipografía
+   3) Cabecera y navegación
+   4) Contenido principal
+   5) Tablas y figuras
+   6) Aside
+   7) Formularios
+   8) Botones y enlaces
+   9) Componentes (galería, hero, índice interno)
+  10) Media queries
+*/
+
+/* 1) Base */
+:root { --max: 960px; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.5; }
+
+/* 2) Layout y tipografía */
+.container { max-width: var(--max); margin: 0 auto; padding: 1rem; }
+h1, h2, h3 { line-height: 1.2; }
+
+/* 3) Cabecera y navegación */
+header, footer { background: #111; color: #fff; }
+nav ul { list-style: none; padding: 0; display: flex; gap: 1rem; flex-wrap: wrap; }
+nav a { color: #fff; text-decoration: none; }
+nav a:hover { text-decoration: underline; }           /* pseudoclase */
+
+/* 4) Contenido principal */
+main { padding: 1rem; }
+
+/* Índice interno en píldoras (sin viñetas) */
+.index-interno ul { list-style: none; padding-left: 0; margin: 0 0 1rem 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.index-interno a { display: inline-block; border: 1px solid #ddd; padding: .25rem .5rem; border-radius: 6px; text-decoration: none; }
+.index-interno a:hover { background: #f3f3f3; }       /* pseudoclase */
+
+/* 5) Tablas y figuras */
+.table-wrapper { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; margin-block: 1rem; }
+th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: left; }
+thead th { background: #f3f3f3; }
+/* Ejemplo de selector por ID (tabla principal de carreras) */
+#tabla-carreras { font-variant-numeric: tabular-nums; }
+
+figure { margin: 1rem 0; }
+figure img { max-width: 200px; height: auto; display: block; }
+figcaption { font-size: 0.9rem; color: #555; }
+
+/* 6) Aside */
+aside { background: #f7f7f7; border-left: 4px solid #ddd; padding: 0.75rem; margin: 1rem 0; }
+
+/* 7) Formularios */
+form { display: grid; gap: 0.75rem; max-width: 600px; }
+fieldset { border: 1px solid #ccc; padding: 1rem; }
+legend { padding: 0 0.5rem; }
+label { display: block; margin-bottom: 0.25rem; }
+input, select, textarea, button { font: inherit; padding: 0.5rem; }
+input:focus, select:focus, textarea:focus { outline: 2px solid #222; } /* pseudoclase */
+input[type="email"] { border: 1px solid #888; }                         /* selector de atributo */
+
+/* 8) Botones y enlaces */
+.btn { display: inline-block; padding: 0.5rem 0.75rem; border: 1px solid #222; background: #fff; color: #222; text-decoration: none; border-radius: 4px; }
+.btn:hover { background: #eee; }
+footer a { color: #aee; }
+
+/* 9) Componentes */
+/* Galería simple de pilotos */
+.pilotos-galeria { list-style: none; padding: 0; display: grid; gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+.piloto-card { margin: 0; }
+.piloto-card img { width: 100%; height: auto; border-radius: 8px; }
+.piloto-card figcaption { text-align: center; font-size: .95rem; margin-top: .25rem; }
+
+/* Hero limpio con collage (sin overlay ni botones extra) */
+.hero { position: relative; margin: 1rem 0; border-radius: 12px; overflow: hidden; }
+.hero img { display: block; width: 100%;
+  height: clamp(320px, 40vh, 460px);  /* más alto = menos reescalado y más nitidez */
+  object-fit: cover;
+}
+
+/* 10) Media queries */
+@media (max-width: 700px) {
+  nav ul { flex-direction: column; }   /* navegación apilada en móvil */
+  .container { padding: 0.75rem; }
+}

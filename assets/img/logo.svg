@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="0 0 120 40">
+  <rect width="120" height="40" fill="#111"></rect>
+  <path d="M10 30 L30 10 L60 10 L40 30 Z" fill="red"></path>
+  <text x="65" y="26" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#fff">F1 Lite</text>
+</svg>
